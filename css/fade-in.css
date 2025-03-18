@@ -1,0 +1,6 @@
+/*fade-incss*/
+.animate { opacity: 0; /* 最初は見えない */ 
+  transform: translateY(20px); /* ちょっと下にずらす */ 
+  transition: opacity 0.6s, transform 0.6s; } 
+  
+  .fade-in { opacity: 1; /* ふわっと表示 */ transform: translateY(0); }

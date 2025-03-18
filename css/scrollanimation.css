@@ -1,0 +1,54 @@
+/* 右から左へスクロール */
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+    to {
+    transform: translateX(-100%);
+  }
+  }
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+  }
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0
+  }
+  .scroll-infinity__list--left {
+    animation: infinity-scroll-left 50s infinite linear 0.5s both;
+  }
+  .scroll-infinity__item {
+    width: calc(100vw / 2);
+  }
+  .scroll-infinity__item>img {
+    width: 100%;
+  }
+/* 右から左へスクロール */
+
+/* 左から右へスクロール */
+  @keyframes infinity-scroll-right {
+    from {
+      transform: translateX(-100%);
+    }
+      to {
+      transform: translateX(0%);
+    }
+    }
+    .scroll-infinity__list--right{
+      animation :infinity-scroll-right 80s infinite linear 0.5s both;
+    }
+    /* 左から右へスクロール */
+
+    /* 文字スクロール */
+    .scroll-infinity__item--text {
+      font-family: Comfortaa,cursive;
+      text-wrap: nowrap;
+      overflow: hidden;
+      font-size: 8rem;
+      color: #222;
+      max-width: 100vw;
+
+    }
+     /* 文字スクロール */
